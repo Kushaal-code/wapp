@@ -1,0 +1,87 @@
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    flex: 0.35;
+}
+.sidebarHeader{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border-right: 1px solid lightgray;
+}
+.sidebarRight{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 10wh;
+}
+.sidebarSearchContainer{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    height: fit-content;
+    background-color: #f6f6f6;
+}
+.sidebarSearch{
+    width: 100%;
+}
+.sidebarSearch>form{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    width: 100%;
+    height: 35px;
+    border-radius: 20px;
+}
+.sidebarSearch>form{
+    width: 100%;
+}
+.sidebar>form>button{
+    height: 0px;
+    width: 0px;
+    
+}
+.sidebarSearch > form > .MuiSvgIcon-root{
+    color: gray;
+    padding: 10px;
+}
+.sidebarSearch > form > input{
+    font-family: 'Courier New', Courier, monospace;
+    border: none;
+    outline: none;
+    width: 100%;
+    margin-left: 10px;
+}
+
+.searchResult{
+    margin-top: 10px;
+    display: flex;
+    padding: 20px;
+    cursor: pointer;
+    border-bottom: 1px solid #f6f6f6;
+}
+.searchResult > .resultInfo{
+    margin-left: 10px;
+}
+.searchResult:hover{
+    background-color: gainsboro;
+}
+.sidebarChats{
+    background-color: white;
+    flex: 1;
+    overflow: scroll;
+}
+.sidebarChats>a{
+    text-decoration: none;
+}
+.sidebarChats>a:link{
+    
+    color: black
+}
+.sidebarChats>a:visited{
+    
+    color: black
+}
+.sidebarChats>a:focus>.sidebarChat{
+    background-color: gainsboro;
+}

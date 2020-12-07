@@ -1,0 +1,80 @@
+.chat{
+    display: flex;
+    flex-direction: column;
+    flex: 0.65;
+}
+.chatHeader{
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+}
+.chatHeaderInfo{
+    flex:1;
+    padding-left: 10px;
+}
+.chatHeaderInfo > p{
+    color: gray;
+}
+.chatHeaderInfo > h3{
+    margin-bottom: 2px;
+    font-weight: 500;
+}
+.chatBody{
+    flex:1;
+    background-image: url("https://www.photohdx.com/images/2016/12/abstract-light-brown-background.jpg");
+    background-repeat: repeat;
+    background-position: center;
+    padding: 30px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+.chatMsg{
+    position: relative;
+    font-size: 16px;
+    padding: 10px;
+    width: fit-content;
+    border-radius: 10px;
+    background-color: #ffffff;
+    margin-bottom: 30px;
+}
+.chatMsg.receiver{
+    margin-left: auto;
+    background-color: #abebc3;
+}
+.chatMsgTimestamp{
+    margin-left: 10px;
+    font-size: x-small;
+}
+.chatName{
+    position: absolute;
+    top: -15px;
+    font-weight: 800;
+    font-size: x-small;
+}
+.chatFooter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 65px;
+    border-top: 1px solid lightgray;
+}
+.chatFooter > form{
+    flex: 1;
+    display: flex;
+}
+.chatFooter > form > input{
+    flex: 1;
+    border-radius: 30px;
+    padding: 10px;
+    border: none;
+}
+.chatFooter > form > button{
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.chatFooter > .MuiSvgIcon-root{
+    padding: 5px;
+}

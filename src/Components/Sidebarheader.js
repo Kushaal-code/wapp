@@ -4,7 +4,6 @@ import MoreVertIcon from '@material-ui/icons/MoreVert';
 import DonutLargeIcon from '@material-ui/icons/DonutLarge';
 import PowerSettingsNewIcon from '@material-ui/icons/PowerSettingsNew';
 import { Avatar, IconButton } from "@material-ui/core";
-import axios from '../axios';
 import { actionTypes } from "../Reducer";
 import {useStateValue} from '../StateProvider';
 function SidebarHeader(){

@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import SidebarChat from './SidebarChat';
-import Pusher from 'pusher-js';
 import axios from '../axios';
 import { useParams } from 'react-router-dom';
 import { useStateValue } from '../StateProvider';

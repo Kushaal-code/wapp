@@ -5,7 +5,7 @@ import axios from 'axios'
 // });
 
 const instance=axios.create({
-    baseURL: "arcane-peak-83255.herokuapp.com",
+    baseURL: "https://arcane-peak-83255.herokuapp.com",
 });
 
 export default instance;

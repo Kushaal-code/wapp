@@ -16,7 +16,6 @@ function SidebarChats() {
         _id: user._id,
       }
     }).then(response => {
-      console.log(response.data);
       if(response.data[0]!=undefined)
         setRooms(response.data);
     })

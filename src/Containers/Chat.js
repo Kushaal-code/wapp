@@ -28,28 +28,17 @@ function Chat(){
                 _id: user._id,
               }
             }).then(response=>{
-                console.log(response.data.participants);
                 setroomHeader(response.data.participants);
                 setMessages(response.data.messages);
             })
         }
     },[roomId]);
 
-
-    // useEffect(() => {
-    //     axios.get('/messages/sync').then(response => {
-    //       console.log(response.data);
-    //       setMessages(response.data);
-    //     })
-    //   }, []);
-
     
     
       useEffect(() => {
         socket.on('newmessage',(newMessage)=>{
           if(roomId==newMessage.roomId){
-            console.log(roomId)
-            console.log(newMessage)
             setMessages([...messages, newMessage]);
           }
         })
@@ -62,13 +51,14 @@ function Chat(){
 
     const sendMessage= async (e) => {
         e.preventDefault(); 
-
+        if(input.length>0){
         axios.post('/messages/new',{
             roomid:roomId,
             sender: user._id,
             message: input,
             timestamp: Date.now(),
         })
+      }
         
         setInput("");
     };

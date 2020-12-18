@@ -22,7 +22,7 @@
 }
 .chatBody{
     flex:1;
-    background-image: url("https://www.photohdx.com/images/2016/12/abstract-light-brown-background.jpg");
+    background-image: url("./bg-chat.jpg");
     background-repeat: repeat;
     background-position: center;
     padding: 30px;

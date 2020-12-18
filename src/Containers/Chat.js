@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import ChatBody from "../Components/Chatbody";
 import ChatHeader from "../Components/Chatheader";
 import InsertEmoticonIcon from '@material-ui/icons/InsertEmoticon';
@@ -19,7 +19,11 @@ function Chat(){
     const { roomId }=useParams();
     const [roomHeader,setroomHeader]=useState("");
     const [messages, setMessages] = useState([]);
+    const inputRef=useRef();
 
+    useEffect(()=>{
+      inputRef.current.focus();
+    });
 
     useEffect(()=>{
         if(roomId){
@@ -69,7 +73,7 @@ function Chat(){
         <div className="chatFooter">
             <InsertEmoticonIcon/>
             <form>
-                <input value={input} onChange={e=>setInput(e.target.value)} type="text" placeholder="Type a message"/>
+                <input ref={inputRef} value={input} onChange={e=>setInput(e.target.value)} type="text" placeholder="Type a message"/>
                 <button onClick={sendMessage} type="submit"><SendIcon/></button>
             </form>
         </div>

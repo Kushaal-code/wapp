@@ -82,6 +82,3 @@
     
     color: black
 }
-.sidebarChats>a:focus>.sidebarChat{
-    background-color: gainsboro;
-}
